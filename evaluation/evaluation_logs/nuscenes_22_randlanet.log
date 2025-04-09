@@ -1,0 +1,24 @@
+04/09/2024 11:56:51
+Loading checkpoint open3dML/weights_randlanet_nuscenes/ckpt_00010.pth
+
+================================================
+V (1) -> Model: randlanet, Shape Algorithm: labeled polygon
+================================================
+TP, FP, FN, TN : 9432, 178, 347, 210764
+IoU: 94.7
+
+================================================
+V (2) -> Model: randlanet, Shape Algorithm: contour
+================================================
+TP, FP, FN, TN : 53, 10, 67, 9870
+IoU: 40.8
+---
+Hausdorff: 15.941 
+
+================================================
+V (3) -> Model: randlanet, Shape Algorithm: mesh
+================================================
+TP, FP, FN, TN : 64, 12, 56, 9868
+IoU: 48.5
+---
+Hausdorff: 15.928 

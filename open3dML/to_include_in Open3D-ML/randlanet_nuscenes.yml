@@ -1,0 +1,41 @@
+dataset:
+  name: NuScenes_SemSeg
+  dataset_path: '/nuscenes'
+  cache_dir: '/nuscenes_cache'
+  #steps_per_epoch_train: 6000
+  steps_per_epoch_valid: 500
+
+model:
+  name: RandLANet
+  batcher: DefaultBatcher
+  num_classes: 3 # or all?
+  num_points: 81920
+  num_neighbors: 16
+  framework: torch
+  num_layers: 4
+  ignored_label_inds: [0]
+  sub_sampling_ratio: [4, 4, 4, 4]
+  in_channels: 3
+  dim_features: 8
+  dim_output: [16, 64, 128, 256]
+  grid_size: 0.06
+  augment:
+    recenter:
+      dim: [ 0, 0 ]
+
+pipeline:
+  name: SemanticSegmentation
+  pin_memory: false
+  num_workers: 0
+  max_epoch: 20
+  save_ckpt_freq: 5
+  device: gpu
+  optimizer:
+    lr: 0.001
+  batch_size: 5
+  main_log_dir: './logs'
+  logs_dir: './logs'
+  scheduler_gamma: 0.9886
+  test_batch_size: 1
+  train_sum_dir: './logs/training_log'
+  val_batch_size: 1

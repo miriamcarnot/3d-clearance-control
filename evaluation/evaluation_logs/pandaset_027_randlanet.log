@@ -1,0 +1,25 @@
+
+04/09/2024 10:06:14
+Restored from open3dML/weights_randlanet_pandaset/ckpt_randlanet_pandaset
+
+================================================
+V (1) -> Model: randlanet, Shape Algorithm: labeled polygon
+================================================
+TP, FP, FN, TN : 277917, 972, 2950, 1466783
+IoU: 98.6
+
+================================================
+V (2) -> Model: randlanet, Shape Algorithm: contour
+================================================
+TP, FP, FN, TN : 585, 119, 348, 8948
+IoU: 55.6
+---
+Hausdorff: 12.4
+
+================================================
+V (3) -> Model: randlanet, Shape Algorithm: mesh
+================================================
+TP, FP, FN, TN : 715, 173, 218, 8894
+IoU: 64.6
+---
+Hausdorff: 8.7

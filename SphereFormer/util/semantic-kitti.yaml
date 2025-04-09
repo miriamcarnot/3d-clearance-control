@@ -1,0 +1,147 @@
+# This file is covered by the LICENSE file in the root of this project.
+labels:
+  0: "noise"
+  1: "Smoke"
+  2: "Exhaust"
+  3: "Spray or rain"
+  4: "Reflection"
+  5: "Vegetation"
+  6: "Ground"
+  7: "Road"
+  8: "Lane Line Marking"
+  9: "Stop Line Marking"
+  10: "Other Road Marking"
+  11: "Sidewalk"
+  12: "Driveway"
+  13: "Car"
+  14: "Pickup Truck"
+  15: "Medium-sized Truck"
+  16: "Semi-truck"
+  17: "Towed Object"
+  18: "Motorcycle"
+  19: "Other Vehicle - Construction Vehicle"
+  20: "Other Vehicle - Uncommon"
+  21: "Other Vehicle - Pedicab"
+  22: "Emergency Vehicle"
+  23: "Bus"
+  24: "Personal Mobility Device"
+  25: "Motorized Scooter"
+  26: "Bicycle"
+  27: "Train"
+  28: "Trolley"
+  29: "Tram / Subway"
+  30: "Pedestrian"
+  31: "Pedestrian with Object"
+  32: "Animals - Bird"
+  33: "Animals - Other"
+  34: "Pylons"
+  35: "Road Barriers"
+  36: "Signs"
+  37: "Cones"
+  38: "Construction Signs"
+  39: "Temporary Construction Barriers"
+  40: "Rolling Containers"
+  41: "Building"
+  42: "Other Static Object"
+
+labels_16:
+  0: 'noise'
+  1: 'Vegetation'
+  2: 'Ground'
+  2: 'Road'
+  4: 'Lane Line'
+  5: 'Sidewalk'
+  6: 'Driveway'
+  6: 'Car'
+  8: 'Medium-sized Truck'
+  9: 'Motorcycle'
+  10: 'Train'
+  7: 'Pedestrian'
+  8: 'Animals'
+  9: 'Pylons'
+  10: 'Signs'
+  11: 'Cones'
+  6: 'Building'
+learning_map:
+  0: 0
+  1: 0
+  2: 0
+  3: 0
+  4: 0
+  5: 1
+  6: 0
+  7: 2
+  8: 0
+  9: 0
+  10: 0
+  11: 0
+  12: 0
+  13: 0
+  14: 0
+  15: 0
+  16: 0
+  17: 0
+  18: 0
+  19: 0
+  20: 0
+  21: 0
+  22: 0
+  23: 0
+  24: 0
+  25: 0
+  26: 0
+  27: 0
+  28: 0
+  29: 0
+  30: 0
+  31: 0
+  32: 0
+  33: 0
+  34: 0
+  35: 0
+  36: 0
+  37: 0
+  38: 0
+  39: 0
+  40: 0
+  41: 0
+  42: 0
+
+learning_ignore: # Ignore classes
+  0: True
+
+
+split: # sequence numbers
+  train:
+    - 035
+    - 042
+    - 028
+    - 043
+    - 019
+    - 038
+    - 011
+    - 016
+    - 037
+    - 005
+    - 044
+    - 002
+    - 003
+    - 001
+    - 033
+    - 023
+    - 041
+    - 040
+    - 024
+    - 034
+    - 039
+    - 030
+    - 017
+    - 032
+  valid:
+    - 021
+    - 015
+  test:
+    - 046
+    - 027
+    - 013
+    - 029

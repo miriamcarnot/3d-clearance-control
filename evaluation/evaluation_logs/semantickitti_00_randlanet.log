@@ -1,0 +1,26 @@
+13/09/2024 13:49:38
+Restored from open3dML/weights_randlanet_semantickitti/ckpt-1
+running inference
+
+================================================
+V (1) -> Model: randlanet, Shape Algorithm: labeled polygon
+================================================
+TP, FP, FN, TN : 10002, 1025, 2014, 2513998
+IoU: 76.7
+
+================================================
+V (2) -> Model: randlanet, Shape Algorithm: contour
+================================================
+TP, FP, FN, TN : 76, 31, 53, 9840
+IoU: 47.5
+---
+Hausdorff: 14.0 
+
+================================================
+V (3) -> Model: randlanet, Shape Algorithm: mesh
+================================================
+Number of edges before and after: 245 -> 245
+TP, FP, FN, TN : 106, 64, 23, 9807
+IoU: 54.9
+---
+Hausdorff: 12.7 
