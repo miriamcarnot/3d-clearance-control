@@ -114,31 +114,6 @@ def concatenate_scans_kitti(scans, poses_list, preds_list):
     concatenated_scans = np.concatenate(concatenated_scans, axis=0)
     return concatenated_scans
 
-# def concatenate_scans_kitti(scans, poses_list, preds_list):
-#     concatenated_scans = []
-#     pose_1 = poses_list[0]
-#     first = True
-#
-#     for cur_scan, cur_pose, pred in zip(scans, poses_list, preds_list):
-#         num_rows = cur_scan.shape[0]
-#         ones_column = np.ones((num_rows, 1))
-#         points = np.concatenate((cur_scan[:, :3], ones_column), axis=1)
-#
-#         if first:
-#             transformed_points = points
-#             first = False
-#         else:
-#             transformed_points = np.dot(inv(pose_1), np.dot(cur_pose, points.T)).T
-#
-#         np_preds = np.array([[x] for x in pred])
-#         arr_with_preds = np.append(transformed_points[:, :3], np_preds, axis=1)
-#
-#         concatenated_scans.append(arr_with_preds)
-#
-#     concatenated_scans = np.concatenate(concatenated_scans, axis=0)
-#     return concatenated_scans
-
-
 def get_points_kitti(dataset_path, sequence_name: str, start, stop, step):
     seq_path = os.path.join(dataset_path, sequence_name.zfill(2))
     frames = sorted(os.listdir(os.path.join(seq_path, 'velodyne')), key=lambda x: int(x.split('.')[0]))

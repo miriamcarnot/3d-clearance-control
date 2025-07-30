@@ -138,16 +138,6 @@ def main():
         inliers, outliers = crop_vege_pcd(vege_data, road_polygon)
         inliers_label, outliers_label = crop_vege_pcd(vege_data, label_polygon.points)
 
-        # points = np.array(road_polygon)
-        # lines = [[i, i + 1] for i in range(len(points) - 1)]
-        # road_polygon_ls = o3d.geometry.LineSet()
-        # road_polygon_ls.points = o3d.utility.Vector3dVector(points)
-        # road_polygon_ls.lines = o3d.utility.Vector2iVector(lines)
-        # colors = [[1, 0, 0] for _ in range(len(lines))]  # Red lines
-        # road_polygon_ls.colors = o3d.utility.Vector3dVector(colors)
-        #
-        # o3d.visualization.draw_geometries([road_pcd, inliers, outliers, road_polygon_ls])
-
         calculate_performance(inliers, outliers, inliers_label, outliers_label)
         check_polygon_coverage(road_polygon, label_polygon.points)
 
