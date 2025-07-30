@@ -1,8 +1,8 @@
 # 🌳 3D Clearance Control: Automatic Roadside Vegetation Maintenance 🌳
 
-<p float="left">
-  <img src="images/image_vegetation_maintenance.png" width="40%" />
-  <img src="images/real_maintenence_image.jpg" width="30%" /> 
+<p align="center">
+  <img src="images/image_vegetation_maintenance.png" width="45%" />
+  <img src="images/real_maintenence_image.jpg" width="34%" /> 
 </p>
 
 ## 📝 Abstract
