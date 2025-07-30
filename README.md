@@ -10,6 +10,7 @@ Thus, regulations clearly define the height above the road that must not be obsc
 We developed a modular process to perform a comprehensive evaluation combining different segmentation models and road boundary approximation methods. We measure the accuracy and computing times on three widely used street-level datasets: SemanticKITTI, NuScenes, and PandaSet. 
 We achieved an mIoU of 67.6 on our annotated test scenes and a speed increase of 52.7\% compared to previous systems.
 
+In this [video](https://cloud.scadsai.uni-leipzig.de/index.php/s/sm4NNYjL4wyigNL), we give a brief overview and a visualization of the single steps of our pipeline.
 
 ## ⚙️ Getting Started
 ### Download the Datasets
@@ -20,8 +21,7 @@ We achieved an mIoU of 67.6 on our annotated test scenes and a speed increase of
 ### Prepare Environments
 
 - install conda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
-(creates two environments: one for RandLANet and one for SphereFormer as they are not compatible)
-- run script```python setup.py```
+- run script```python setup.py``` (creates two environments: one for RandLANet and one for SphereFormer)
 
 #### For SphereFormer:
 - ```conda activate env_sphere```
