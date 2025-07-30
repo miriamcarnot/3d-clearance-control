@@ -1,8 +1,9 @@
 # 🌳 3D Clearance Control: Automatic Roadside Vegetation Maintenance 🌳
 
-<div align="center">
-  <img src="image_vegetation_maintenance.png" width="70%"/>
-</div>
+<p float="left">
+  <img src="images/image_vegetation_maintenance.png" width="40%" />
+  <img src="images/real_maintenence_image.jpg" width="30%" /> 
+</p>
 
 ## 📝 Abstract
 Overgrown roadside vegetation poses a danger to road users by obstructing the visibility of the road and potentially obscuring signs or other traffic participants.
