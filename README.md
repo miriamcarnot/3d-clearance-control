@@ -14,24 +14,24 @@ In this [video](https://cloud.scadsai.uni-leipzig.de/index.php/s/sm4NNYjL4wyigNL
 
 ## ⚙️ Getting Started
 ### Download the Datasets
-- SemanticKITTI: http://www.semantic-kitti.org/dataset.html#download
-- NuScenes: https://www.nuscenes.org/nuscenes#download with lidarseg (mini-version is sufficient for tests)
-- PandaSet: https://www.kaggle.com/datasets/usharengaraju/pandaset-dataset?resource=download
+- [SemanticKITTI](http://www.semantic-kitti.org/dataset.html#download)
+- [NuScenes](https://www.nuscenes.org/nuscenes#download) with lidarseg (mini-version is sufficient for tests)
+- [PandaSet](https://www.kaggle.com/datasets/usharengaraju/pandaset-dataset?resource=download)
 
 ### Prepare Environments
 
-- install conda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+- install [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 - run script```python setup.py``` (creates two environments: one for RandLANet and one for SphereFormer)
 
 #### For SphereFormer:
 - ```conda activate env_sphere```
-- install the pandaset devkit: https://github.com/scaleapi/pandaset-devkit?tab=readme-ov-file#setup
+- install the [pandaset devkit](https://github.com/scaleapi/pandaset-devkit?tab=readme-ov-file#setup)
 - install SparseTransformer: ```python ./SphereFormer/third_party/SparseTransformer/setup.py install```
 
 #### For RandLANet:
 - ```conda activate env_randlanet```
-- install the pandaset devkit: https://github.com/scaleapi/pandaset-devkit?tab=readme-ov-file#setup
-- extend open3dML library with the files in the /open3dML/to_include_in Open3D-ML directory: https://github.com/isl-org/Open3D-ML/blob/main/docs/howtos.md#adding-a-new-dataset
+- install the [pandaset devkit](https://github.com/scaleapi/pandaset-devkit?tab=readme-ov-file#setup)
+- extend open3dML library with the [files in the /open3dML/to_include_in Open3D-ML directory](https://github.com/isl-org/Open3D-ML/blob/main/docs/howtos.md#adding-a-new-dataset)
 
 ### Download weights
 - download the [trained SphereFormer models for SemanticKITTI and NuScenes](https://github.com/dvlab-research/SphereFormer/tree/master?tab=readme-ov-file#pre-trained-models) from the SphereFormer repository 
@@ -60,11 +60,11 @@ Finally, points of vegetation that protrude beyond the road are marked in red. T
 
 ## 📎 Related Repositories
 This repository contains functions and altered code from the following repositories:
-- SphereFormer: https://github.com/dvlab-research/SphereFormer/ (Apache 2.0 License)
-- Semantic KITTI API: https://github.com/PRBonn/semantic-kitti-api (MIT License)
+- [SphereFormer](https://github.com/dvlab-research/SphereFormer/) (Apache 2.0 License)
+- [Semantic KITTI API](https://github.com/PRBonn/semantic-kitti-api) (MIT License)
 
 We also call functions from the Devkits developed for 
-- PandaSet: https://github.com/scaleapi/pandaset-devkit/ (Apache 2.0 License)
-- and NuScenes: https://github.com/nutonomy/nuscenes-devkit/ (Apache 2.0 License).
+- [PandaSet](https://github.com/scaleapi/pandaset-devkit/) (Apache 2.0 License) and
+- [NuScenes](https://github.com/nutonomy/nuscenes-devkit/) (Apache 2.0 License).
 
 The licenses for those repositories can be found in the folder "/licenses".
